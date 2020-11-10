@@ -1437,7 +1437,7 @@ task generate(type: TransformerTask) {
         run "custom"
         then:
         executedAndNotSkipped ":custom"
-        outputContains("Property 'classpath' annotated with @Internal should not be also annotated with @InputFiles, @Classpath. This behaviour has been deprecated and is scheduled to be removed in Gradle 7.0.")
+        outputContains("Property 'classpath' annotated with @Internal should not be also annotated with @Classpath, @InputFiles. This behaviour has been deprecated and is scheduled to be removed in Gradle 7.0.")
 
         when:
         executer.expectDeprecationWarning()
