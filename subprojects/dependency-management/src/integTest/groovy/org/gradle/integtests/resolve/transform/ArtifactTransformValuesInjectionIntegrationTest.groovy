@@ -627,7 +627,7 @@ class ArtifactTransformValuesInjectionIntegrationTest extends AbstractDependency
         assertPropertyValidationErrors(
             absolutePathSensitivityDependencies: 'is declared to be sensitive to absolute paths. This is not allowed for cacheable transforms',
             'conflictingAnnotations': [
-                'has conflicting type annotations declared: @InputFile, @InputArtifact, @InputArtifactDependencies; assuming @InputFile',
+                'has conflicting type annotations declared: @InputArtifact, @InputArtifactDependencies, @InputFile; assuming @InputFile',
                 'is annotated with invalid property type @InputFile'
             ],
             inputFile: 'is annotated with invalid property type @InputFile',

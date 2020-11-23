@@ -1,3 +1,12 @@
 {
-    "acceptedApiChanges": []
+    "acceptedApiChanges": [
+        {
+            "type": "org.gradle.tooling.BuildController",
+            "member": "Method org.gradle.tooling.BuildController.isActionsMayRunInParallel()",
+            "acceptation": "[ADD YOUR CUSTOM REASON HERE]",
+            "changes": [
+                "Method added to interface"
+            ]
+        }
+    ]
 }
